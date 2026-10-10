@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dcygb8txdw747"]
+
+[ext_resource type="Script" uid="uid://cr0unrmkf7hj5" path="res://character_red.gd" id="1_y3gah"]
+[ext_resource type="Texture2D" uid="uid://ljs2rmgggvbu" path="res://Sprites/RedCharacter.png" id="2_y3gah"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 17.757318
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yf5fn"]
+radius = 17.5
+
+[node name="CharacterRed" type="CharacterBody2D" unique_id=2016081138 groups=["players"]]
+scale = Vector2(2, 2)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_y3gah")
+
+[node name="Red" type="Sprite2D" parent="." unique_id=938145434]
+texture_filter = 3
+scale = Vector2(0.027, 0.027)
+texture = ExtResource("2_y3gah")
+
+[node name="CharacterRedHitbox" type="Area2D" parent="." unique_id=1298836273]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterRedHitbox" unique_id=257835995]
+scale = Vector2(1.3800001, 1.3800001)
+shape = SubResource("CircleShape2D_g4v7s")
+debug_color = Color(0.9172001, 0.1961756, 0.52925193, 0.41960785)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1673749639]
+shape = SubResource("CircleShape2D_yf5fn")
+debug_color = Color(0.9599592, 0, 0.52142066, 0.41960785)
+
+[connection signal="area_entered" from="CharacterRedHitbox" to="." method="_on_character_red_hitbox_area_entered"]

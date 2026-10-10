@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://w67w62yv6hiq"]
+
+[ext_resource type="Script" uid="uid://8nvuy4sltpn5" path="res://character_blue.gd" id="1_nq64v"]
+[ext_resource type="Texture2D" uid="uid://dqfxxr8dm7lm0" path="res://Sprites/BlueCharacter.png" id="2_nq64v"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nq64v"]
+radius = 18.027756
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i6gf8"]
+radius = 17.5
+
+[node name="CharacterBlue" type="CharacterBody2D" unique_id=1155015306 groups=["players"]]
+scale = Vector2(2, 2)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_nq64v")
+
+[node name="Blue" type="Sprite2D" parent="." unique_id=431259777]
+scale = Vector2(0.027, 0.027)
+texture = ExtResource("2_nq64v")
+
+[node name="CharacterBlueHitbox" type="Area2D" parent="." unique_id=877511145]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBlueHitbox" unique_id=830603749]
+scale = Vector2(1.3599999, 1.3599999)
+shape = SubResource("CircleShape2D_nq64v")
+debug_color = Color(0.33477274, 0.48823863, 1, 0.41960785)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=223438764]
+shape = SubResource("CircleShape2D_i6gf8")
+debug_color = Color(0.9599592, 0, 0.52142066, 0.41960785)
+
+[connection signal="area_entered" from="CharacterBlueHitbox" to="." method="_on_character_blue_hitbox_area_entered"]

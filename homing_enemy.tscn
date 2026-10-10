@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://el64b3ttgdpt"]
+
+[ext_resource type="Texture2D" uid="uid://4q4n2x60qa61" path="res://Sprites/EnemyHomingRed.png" id="1_1pa1i"]
+[ext_resource type="Script" uid="uid://3cm2p6iujhs6" path="res://homing_enemy.gd" id="1_yfyqr"]
+[ext_resource type="Texture2D" uid="uid://cb1wwqc1sxa0i" path="res://Animations/RedEnemyHomingDeath/0012.png" id="3_hy5a4"]
+[ext_resource type="Texture2D" uid="uid://b8eghifq4jcve" path="res://Animations/RedEnemyHomingDeath/0013.png" id="4_sjfgi"]
+[ext_resource type="Texture2D" uid="uid://bcs1dxhfaqy2a" path="res://Animations/RedEnemyHomingDeath/0014.png" id="5_y14sg"]
+[ext_resource type="Texture2D" uid="uid://dn2otspw1i60u" path="res://Animations/RedEnemyHomingDeath/0015.png" id="6_chig4"]
+[ext_resource type="Texture2D" uid="uid://2biebpfa1qbn" path="res://Animations/RedEnemyHomingDeath/0016.png" id="7_e36je"]
+[ext_resource type="Texture2D" uid="uid://chgt58snvkpbh" path="res://Animations/RedEnemyHomingDeath/0017.png" id="8_mtwr0"]
+[ext_resource type="Texture2D" uid="uid://buijxk2khnvhg" path="res://Animations/RedEnemyHomingDeath/0018.png" id="9_1nf8m"]
+[ext_resource type="Texture2D" uid="uid://bys3b4db40h35" path="res://Animations/RedEnemyHomingDeath/0019.png" id="10_oo2js"]
+[ext_resource type="Texture2D" uid="uid://uac5dt8rwe7f" path="res://Animations/RedEnemyHomingDeath/0020.png" id="11_8nu56"]
+[ext_resource type="Texture2D" uid="uid://c2iyl1uq51b7i" path="res://Animations/RedEnemyHomingDeath/0021.png" id="12_boe4t"]
+[ext_resource type="Texture2D" uid="uid://b1u6yhjnslj2u" path="res://Animations/RedEnemyHomingDeath/0022.png" id="13_kcvy8"]
+[ext_resource type="Texture2D" uid="uid://ctf4cb4x458tu" path="res://Animations/RedEnemyHomingDeath/0023.png" id="14_6kkwy"]
+[ext_resource type="Texture2D" uid="uid://ddpd7o6edvprr" path="res://Animations/RedEnemyHomingDeath/0024.png" id="15_1kgyv"]
+[ext_resource type="Texture2D" uid="uid://bc5wna87qbj6w" path="res://Animations/RedEnemyHomingDeath/0025.png" id="16_y6wrr"]
+[ext_resource type="Texture2D" uid="uid://dv4jd0uolsant" path="res://Animations/RedEnemyHomingDeath/0026.png" id="17_u7tl0"]
+[ext_resource type="Texture2D" uid="uid://bponctkdxyots" path="res://Animations/RedEnemyHomingDeath/0027.png" id="18_up5sr"]
+[ext_resource type="Texture2D" uid="uid://bnsxqeogp1hv3" path="res://Animations/RedEnemyHomingDeath/0028.png" id="19_sxk20"]
+[ext_resource type="Texture2D" uid="uid://bs6e7hxuafuc1" path="res://Animations/RedEnemyHomingDeath/0029.png" id="20_wivxw"]
+[ext_resource type="Texture2D" uid="uid://2gsm0vb7fs7i" path="res://Animations/RedEnemyHomingDeath/0030.png" id="21_a4ugs"]
+[ext_resource type="Texture2D" uid="uid://csya5y32mh4h2" path="res://Animations/RedEnemyHomingDeath/0031.png" id="22_p5nnj"]
+[ext_resource type="Texture2D" uid="uid://m0n8g2nirfsh" path="res://Animations/RedEnemyHomingDeath/0032.png" id="23_ugnyc"]
+[ext_resource type="Texture2D" uid="uid://b1oouraslnc1l" path="res://Animations/RedEnemyHomingDeath/0033.png" id="24_kuud1"]
+[ext_resource type="Texture2D" uid="uid://03u2403pixtn" path="res://Animations/RedEnemyHomingDeath/0034.png" id="25_elpau"]
+[ext_resource type="Texture2D" uid="uid://2sqenkw24hmg" path="res://Animations/RedEnemyHomingDeath/0035.png" id="26_llwij"]
+[ext_resource type="Texture2D" uid="uid://dedym2lhfh066" path="res://Animations/RedEnemyHomingDeath/0036.png" id="27_so2iv"]
+[ext_resource type="Texture2D" uid="uid://ccmyyqooemqsb" path="res://Animations/RedEnemyHomingDeath/0037.png" id="28_trxyc"]
+[ext_resource type="Texture2D" uid="uid://ctrsdoj4ylsxl" path="res://Animations/RedEnemyHomingDeath/0038.png" id="29_or6nr"]
+[ext_resource type="Texture2D" uid="uid://clkjqq8sy7c2l" path="res://Animations/RedEnemyHomingDeath/0039.png" id="30_wrml5"]
+[ext_resource type="Texture2D" uid="uid://dkdkjl0suid65" path="res://Animations/RedEnemyHomingDeath/0040.png" id="31_syu8l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hy5a4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sjfgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_y14sg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_chig4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_e36je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mtwr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1nf8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_oo2js")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8nu56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_boe4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kcvy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6kkwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1kgyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_y6wrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_u7tl0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_up5sr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_sxk20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wivxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_a4ugs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_p5nnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ugnyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_kuud1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_elpau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_llwij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_so2iv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_trxyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_or6nr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_wrml5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_syu8l")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(40, 77)
+
+[node name="HomingEnemy" type="Node2D" unique_id=1860304279]
+script = ExtResource("1_yfyqr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1264483038]
+rotation = 1.5707964
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+
+[node name="EnemyHomingRed" type="Sprite2D" parent="." unique_id=52915376]
+rotation = 1.5707964
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_1pa1i")
+
+[node name="HomingEnemyHitbox" type="Area2D" parent="." unique_id=497358557]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HomingEnemyHitbox" unique_id=1445488625]
+position = Vector2(0, -1.5)
+scale = Vector2(2, 0.47999948)
+shape = SubResource("RectangleShape2D_g4v7s")

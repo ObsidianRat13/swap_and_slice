@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://1asv1aj27vl8"]
+
+[ext_resource type="Script" uid="uid://lowd3hi4o6th" path="res://ui.gd" id="1_fyqef"]
+[ext_resource type="PackedScene" uid="uid://7gk66uc04x70" path="res://main.tscn" id="2_m6e0p"]
+
+[sub_resource type="FontFile" id="FontFile_xb563"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/120/0/ascent = 0.0
+cache/0/120/0/descent = 0.0
+cache/0/120/0/underline_position = 0.0
+cache/0/120/0/underline_thickness = 0.0
+cache/0/120/0/scale = 1.0
+
+[node name="UI" type="Control" unique_id=808273007]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fyqef")
+MAIN_SCENE = ExtResource("2_m6e0p")
+
+[node name="GameTitle" type="Label" parent="." unique_id=2121220479]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -459.58997
+offset_top = 228.0
+offset_right = 460.41003
+offset_bottom = 389.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = SubResource("FontFile_xb563")
+theme_override_font_sizes/font_size = 120
+text = "SWAP AND SLICE"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=323717790]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -47.5
+offset_top = -331.0
+offset_right = 47.5
+offset_bottom = -300.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.9999998, 0.8623594, 0.4698249, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 64
+text = "NEW GAME"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

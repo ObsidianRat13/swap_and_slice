@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cw2753sjpfu17"]
+
+[ext_resource type="Texture2D" uid="uid://dbpqcle2kns8s" path="res://DevArt/SwapBullet.png" id="1_5ilou"]
+[ext_resource type="Script" uid="uid://dh18wfi4pns0y" path="res://swap_bullet.gd" id="1_c5ixy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+
+[node name="SwapBullet" type="Node2D" unique_id=1983031113]
+script = ExtResource("1_c5ixy")
+
+[node name="SwapBulletHitbox" type="Area2D" parent="." unique_id=2103157781]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwapBulletHitbox" unique_id=1833083170]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=626626100]
+scale = Vector2(0.24000001, 0.24000001)
+texture = ExtResource("1_5ilou")
+
+[connection signal="area_entered" from="SwapBulletHitbox" to="." method="_on_swap_bullet_hitbox_area_entered"]
